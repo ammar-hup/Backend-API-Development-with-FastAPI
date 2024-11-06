@@ -1,13 +1,10 @@
-# app/schemas.py
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr
 
-class ItemCreate(BaseModel):
+class UserCreate(BaseModel):
     name: str
-    description: Optional[str] = None
-    price: float
-
-class ItemResponse(ItemCreate):
-    id: int
-
-    class Config:
-        orm_mode = True
+    email: EmailStr
+    password: str 
+class UserLogin(BaseModel):
+    name: str
+    email: EmailStr
+    password: str 
