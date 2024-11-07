@@ -1,14 +1,20 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr
 from typing import Optional
 
 class User(BaseModel):
-    id: int
+    id: str
     name: str
     email: str
-    password: str  # Store hashed passwords, not plain text
+    hashed_password: str
+    refresh_token: str = None  
 
-class Item(BaseModel):
-    id: int
+class UserCreate(BaseModel):
     name: str
-    description: Optional[str] = None
-    price: float
+    email: EmailStr
+    password: str
+
+class UserResponse(BaseModel):
+    id: str
+    name: str
+    email: EmailStr
+    refresh_token: Optional[str] = None  # Make it optional if not set

@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"  # Map port 8000 on the host to port 8000 on the container
+    volumes:
+      - .:/app  # Optional: Mount the current directory for live updates
+    depends_on:
+      - mongo  # Ensure MongoDB starts before the FastAPI app
+
+  mongo:
+    image: mongo:latest  # Use the latest MongoDB image
+    ports:
+      - "27017:27017"  # Expose MongoDB on port 27017
+    volumes:
+      - mongo_data:/data/db  # Persist MongoDB data
+
+volumes:
+  mongo_data:  # Define a named volume for MongoDB data persistence
