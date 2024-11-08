@@ -5,6 +5,7 @@ from bson import ObjectId
 client = AsyncIOMotorClient("mongodb://mongo:27017")  
 database = client.users_db  # Create or get the database
 users_collection = database.users  # Create or get the users collection
+organizations_collection = database.organizations  # Create or get the organizations collection
 
 # Helper function to convert MongoDB documents to Pydantic models
 def user_helper(user) -> dict:
