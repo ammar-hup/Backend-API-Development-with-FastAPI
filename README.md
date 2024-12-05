@@ -9,8 +9,8 @@ This project implements a robust, RESTful API using FastAPI, aimed at providing 
 - **Data Validation**: Utilizes Pydantic models for input validation and serialization.
 - **Asynchronous Programming**: Enhances performance and responsiveness.
 - **Modular Design**: Organized structure for routes, models, and schemas.
-- **Database Integration**: [Specify the database used, e.g., SQLite, PostgreSQL].
-- **Authentication**: [Mention authentication methods, e.g., JWT, OAuth2].
+- **Database Integration**: PostgreSQL.
+- **Authentication**: Bearer token.
 
 ## Getting Started
 
