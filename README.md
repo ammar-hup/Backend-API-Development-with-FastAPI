@@ -22,10 +22,13 @@ This project implements a robust, RESTful API using FastAPI, aimed at providing 
  1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/api_development_project.git
+   ```
+   ```
    cd api_development_project
    ```
-2. docker-compose build
-   docker-compose up
+2. Ready to run with docker
+   ```docker-compose build```
+   ```docker-compose up```
 
 
 
