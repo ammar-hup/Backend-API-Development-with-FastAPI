@@ -27,8 +27,12 @@ This project implements a robust, RESTful API using FastAPI, aimed at providing 
    cd api_development_project
    ```
 2. Ready to run with docker
-   ```docker-compose build```
-   ```docker-compose up```
+   ```
+   docker-compose build
+   ```
+   ```
+   docker-compose up
+   ```
 
 
 
