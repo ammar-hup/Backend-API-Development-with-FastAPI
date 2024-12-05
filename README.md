@@ -16,10 +16,16 @@ This project implements a robust, RESTful API using FastAPI, aimed at providing 
 
 ### Prerequisites
 - Python 3.7 or higher
-- [List any other dependencies or tools required, e.g., pip, virtualenv]
+- Docker
 
 ### Installation
-<!-- 1. Clone the repository:
+ 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/api_development_project.git
-   cd api_development_project -->
+   cd api_development_project
+   ```
+2. docker-compose build
+   docker-compose up
+
+
+
